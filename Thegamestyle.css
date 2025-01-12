@@ -1,0 +1,321 @@
+
+body{
+    background-image: url('IMG_25551.jpg'); /* Lien vers l'image */
+    background-size: 100%;
+    background-size: center;/*Centre l'image */
+    /*height: 1000px;*/
+    background-attachment: fixed;
+    /* Fixe l'image lorsqu'on défile la page */
+      /*Assure que le body prend toute la hauteur de la fenêtre 
+    margin: 0;*/
+}
+header{
+    height: 10vh;
+    width: 10vw;
+}
+.navbar{
+     position: absolute;/* Fixe la barre en haut */
+            top: 0; /* Positionne-la en haut de la page */
+            left: 0; /* Alignée à gauche */
+            width: 100%; /* Largeur à 100% de l'écran */
+            background-color: rgba(0, 0, 0, 0.229);  /*Couleur de fond */
+            z-index: 1000; /* Assure que la barre reste au-dessus du contenu */
+            padding: 30px 0;
+}
+
+.navbar .a {
+    text-decoration: none; /* Supprime le souligné */
+            color: white; /* Couleur du texte */
+            font-size: 18px;
+            font-family: 'Roboto';
+            padding: 10px 40px;
+            transition: background-color 0.3s;
+
+}
+.navbar .logo {
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    left: 20px;
+    width: 4%;
+}
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 5px;
+    font-weight: bold;
+    width: 60px;
+    margin-right: 20px;
+  }
+.game{
+    text-decoration: none;
+    color : rgb(98, 0, 0) ;
+    font-size: 18px;
+    font-family: 'Roboto';
+    padding: 10px 40px;
+    transition: background-color 0.3s;
+}
+
+.navbar .wrapper ul {
+    list-style-type: none; /* Supprime les puces */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+  }
+  
+
+.navbar .wrapper ul li {
+    display: inline; /* Affiche les éléments en ligne */
+    margin-right: 60px;
+}
+.navbar ul li .a:hover {
+    background-color: #555;}
+
+.navbar .menu{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 35px;
+}
+
+
+.jeu{ 
+    padding-top: 4%;
+    text-align:center;
+}
+
+.jeu img{
+    width:20%
+}
+
+
+.titles {
+    color: grey;
+    align-items: center; 
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+  }
+
+h2 {
+    font-size: 30px;
+    color: #fbf5f5;
+    font-family: 'Roboto';
+    text-align: center;
+}
+.row-3{
+    margin-top: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.intro{
+    top:100px;
+    display: flex; /* Utilise flexbox pour aligner les éléments */
+    align-items: center; /* Aligne verticalement si nécessaire */
+    gap: 20px; /* Espacement entre l'image et le texte */ 
+    font-family: 'Roboto';
+}
+.row-3 div {
+    margin-right: 10px;
+	border-radius: 10px;
+	padding: 3% 4% 3% 4%;
+	background: black;
+	transition: all 0.5s ease-out;
+}
+
+.navbar .menu-hamburger{
+    right: 0%;
+  } 
+
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('IMG_25551.jpg'); /* Image pour les tablettes */
+    }
+    .column {
+            width: 100%;
+            display: block;
+          }
+    
+}
+
+/* Media query pour les écrans petits (smartphones) */
+@media (max-width: 480px) {
+    body {
+        background-image: url('IMG_25551.jpg'); /* Image pour les smartphones */
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    body {
+        background-image: url('IMG_25551.jpg'); /* Image pour les smartphones */
+    }
+    
+    .navbar .logo {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 4%;
+    }
+    .navbar .menu-hamburger {
+      display: block;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .wrapper {
+          position: absolute; /* L'élément sort du flux */
+          left: 0;
+          margin-left: -100%;
+          transition: margin-left 0.5s ease-in-out;
+      }
+      .wrapper.mobile-menu {
+          width: 100%;
+          margin-left: 0;
+          background-color: rgba(0, 0, 0, 0.56);
+          backdrop-filter: blur(7px);
+          height: 100vh;
+          flex-direction: column;
+          align-items: center;
+      }
+      .wrapper ul li .a{
+        font-size: 2rem;
+        color: white;
+      }
+      .wrapper ul li a {
+          display: block;
+          color: rgb(98, 0, 0);
+          text-decoration: none;
+          font-size: 2rem;
+          margin: 20px 0;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      }
+  
+      .wrapper a:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+      }
+
+}
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card container */
+  .card {
+    position: relative;
+    max-width: 400px;
+  }
+  
+  /* setting padding based on even or odd */
+  .card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+  }
+  .card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+  }
+  /* Global ::before */
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid rgb(118, 2, 2);
+  }
+  
+  /* Setting the border of top, bottom, left */
+  .card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  /* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+  @media only screen and (max-width: 400px) {
+    .card:nth-child(odd)::before {
+      top: -5px;
+      bottom: -5px;
+    }
+  }
+  
+  /* Setting the border of top, bottom, right */
+  .card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+  }
+  
+  /* Removing the border if it is the first card */
+  .card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+  }
+  
+  /* Removing the border if it is the last card  and it's odd */
+  .card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  /* Removing the border if it is the last card  and it's even */
+  .card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  /* Title of the card */
+  .title {
+    font-family: 'Roboto';
+    color: rgb(251, 251, 251);
+    position: relative;
+    font-size: 20px;
+
+  }
+  
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    font-family: 'Roboto';
+    border-radius: 999px;
+    border: 3px solid rgb(144, 0, 0);
+  }
+  
+  /* text right if the card is even  */
+  .card:nth-child(even) > .info > .title {
+    text-align: right;
+  }
+  
+  /* setting dot to the left if the card is odd */
+  .card:nth-child(odd) > .info > .title::before {
+    left: -45px;
+  }
+  
+  /* setting dot to the right if the card is odd */
+  .card:nth-child(even) > .info > .title::before {
+    right: -45px;
+  }
+

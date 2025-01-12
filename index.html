@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href = "Logo_cartes.webp">
+    <link rel="stylesheet" href="style.css"/>
+    <style type="text/css">a:link{text-decoration:none}</style>
+</head>
+<body style="max-width: 1920px; margin-left: auto; margin-right: auto; background-color: rgb(59, 6, 6);">
+    <header>
+        <nav class = "navbar">
+            <img class="logo" src="Logo_cartes.webp" alt="logo">
+            <div class ="wrapper">
+                <ul>
+                    <li><a class="home" href="index.html">HOME</a></li>
+                    <li><a class="a" href="Aboutus.html">ABOUT US</a></li>
+                    <li><a class="a" href="indextest.html">COMMUNITY</a></li>
+                    <li><a class="a" href="Thegame.html">THE GAME</a></li>
+                
+                </ul>   
+            </div>  
+            <img src="white-menu-icon-png-18.jpg" alt="menu" class="menu-hamburger">
+        </nav>
+        <div clas="homecontainer">
+          <h1>Welcome to horror...WE DON'T SEE SHARP</h1>
+          <p class="p1">Dare to click on this button ?</p>
+          <button id="soundButton">DOWNLOAD</button>
+      </div>
+      <audio id="buttonSound">
+          <source src="evil-laugh-multi-34044.mp3" type="audio/mpeg">
+          Votre navigateur ne supporte pas l'audio HTML5.
+      </audio>
+      <script src="script.js"></script>
+    </header>
+	<section class="column">
+        <h3 class="texte_italic">"Dive into We Don't See Sharp: a poker game where every card hides a riddle and every bet brings you closer to solving a murder."</h3>
+    <div class="row-3">
+        <div>	
+            <h3>Download</h3>	
+            <p>Come dive into a world of mystery and horror</p>	<a href="Download.html" class="btn"><span>More</span><i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div>	
+            <h3>About</h3>	
+            <p>Discover the advances and stages of this wonderful game</p>	<a href="Thegame.html" class="btn"><span>More</span><i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div>	
+            <h3>Ressources</h3>	
+            <p>Find the tools and documents used during the creation of the game</p>	<a href="ressources.html" class="btn"><span>More</span><i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <div class="foot">
+        <p class="text_foot"><span style="color: rgb(255, 255, 255); bottom: 0 ">Made with ❤️ by FlushHandStudio</span></p>
+    </div>
+  </section>
+  
+</body>
+<script>
+    const hamburger = document.querySelector('.menu-hamburger');
+    const wrapper = document.querySelector('.wrapper');
+
+    // Toggle le menu mobile
+    hamburger.addEventListener('click', () => {
+    wrapper.classList.toggle('mobile-menu');
+});
+</script>
+</html>
