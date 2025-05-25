@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="icon" href = "Logo_cartes.webp">
+    <link rel="icon" href = "images/Logo_cartes.webp">
     <link rel="stylesheet" href="style.css"/>
     <style type="text/css">a:link{text-decoration:none}</style>
 </head>
 <body style="max-width: 1920px; margin-left: auto; margin-right: auto; background-color: rgb(59, 6, 6);">
-    <header>
+    <div class="wrapper">
+        <header>
         <nav class = "navbar">
-            <img class="logo" src="Logo_cartes.webp" alt="logo">
+            <img class="logo" src="images/Logo_cartes.webp" alt="logo">
             <div class ="wrapper">
                 <ul>
-                    <li><a class="home" href="index.html">HOME</a></li>
-                    <li><a class="a" href="Aboutus.html">ABOUT US</a></li>
+                    <li><a class="a" href="index.html">HOME</a></li>
+                    <li><a class="apropos" href="Aboutus.html">ABOUT US</a></li>
                     <li><a class="a" href="indextest.html">COMMUNITY</a></li>
                     <li><a class="a" href="Thegame.html">THE GAME</a></li>
                 
                 </ul>   
             </div>  
-            <img src="white-menu-icon-png-18.jpg" alt="menu" class="menu-hamburger">
+            <img src="images/white-menu-icon-png-18.jpg" alt="menu" class="menu-hamburger">
         </nav>
         <div clas="homecontainer">
           <h1>Welcome to horror...</h1>
           <h2>WE DON'T SEE SHARP</h2>
           <p class="p1">Dare to click on this button ?</p>
-          <button id="soundButton">DOWNLOAD</button>
-      </div>
-      <audio id="buttonSound">
-          <source src="evil-laugh-multi-34044.mp3" type="audio/mpeg">
-          Votre navigateur ne supporte pas l'audio HTML5.
-      </audio>
+          <a id="downloadLink" href="WeDontSeeSharpSetup.exe" download>
+            <button id="soundButton">DOWNLOAD</button>
+        </a>
+    </div>
+    <audio id="buttonSound">
+        <source src="evil-laugh-multi-34044.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'audio HTML5.
+    </audio>
       <script src="script.js"></script>
     </header>
 	<section class="column">

@@ -1,6 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    background-image: url('IMG_25551.jpg'); /* Lien vers l'image */
+    background-image: url('images/IMG_25551.jpg'); /* Lien vers l'image */
     background-size: 100%;
     background-size: center;/*Centre l'image */
     /*height: 1000px;*/
@@ -103,7 +103,7 @@ body{
   @media (max-width: 1200px) {
   
     body {
-        background-image: url('IMG_25551.jpg'); /* Image pour les smartphones */
+        background-image: url('images/IMG_25551.jpg'); /* Image pour les smartphones */
     }
     
     .navbar .logo {

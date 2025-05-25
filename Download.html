@@ -42,10 +42,36 @@
                 <a href="Soutenance.pdf" class="btn"><span>More</span><i class="fas fa-arrow-right"></i></a>
             </div>
             <div>	
-                <h3>Rapport Soutenance</h3>	
-                <a href="Rapport_de_soutenance_n_1 (1) (2).pdf" class="btn"><span>More</span><i class="fas fa-arrow-right"></i></a>
+                <h3>Documents Rapports Soutenances</h3>	
+                <button class="btn" id="downloadMultiple">
+                    <span>More</span><i class="fas fa-arrow-right"></i>
+                </button>
+                
+                <script>
+                    document.getElementById('downloadMultiple').addEventListener('click', function () {
+                        const files = [
+                            'Rapport_Soutenance_1.pdf',
+                            'Rapport_Soutenance_2.pdf',
+                            'Rapport_Soutenance_3.pdf'
+                        ];
+                
+                        files.forEach(file => {
+                            const link = document.createElement('a');
+                            link.href = file;
+                            link.download = file.split('/').pop(); // récupère le nom du fichier
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+                    });
+                </script>
+                
+            </div>
+            <div>	
+                <h3>Manuel d'utilisation & d'installation</h3>	
+                <a href="We Don’t See Sharp User Manual 24_05 (1).pdf" class="btn"><span>More</span><i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
+    
       </section>
 </body>
-

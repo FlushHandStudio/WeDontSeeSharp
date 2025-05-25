@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 °{
     margin: 0;
@@ -7,11 +7,19 @@
     list-style: none;
 }
 
+  
+  body {
+    font-family: 'WhoAsksSatan', sans-serif; /* Utilisation de la police */
+  }
+  
+  
+  
+
 
 header{
     height: 100vh;
     /*width: 10vw;*/
-    background-image: url('Sketches\ \(1\).jpeg'); /* Lien vers l'image */
+    background-image: url('images/Sketches\ \(1\).jpeg'); /* Lien vers l'image */
     background-size: 100%;
     background-size: center;/*Centre l'image */
     background-attachment: fixed;
